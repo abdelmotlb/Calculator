@@ -1,0 +1,59 @@
+
+.buttonsGrid{
+    width: 40%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    position: absolute;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "suba suba suba suba"
+        "header header header header"
+        "b11 b12 b13 b14"
+        "b21 b22 b23 b24"
+        "b31 b32 b33 b34"
+        "b41 b42 b43 b44"
+        "b51 b52 b53 b54"
+        "b61 b62 b63 b64";
+    background-color: #808080;
+    margin: 5%;
+    border-width: 4px;
+    border-style: solid;
+    box-shadow: 2px 2px 50px 0px rgb(0, 0, 0);
+    background: linear-gradient(to bottom right, rgb(40, 51, 173), rgb(18, 163, 212));
+  }
+  
+  .text1 {
+    grid-area: suba;
+    text-align: center;
+    font-size: large;
+  }
+  .text2 {
+    grid-area: header;
+    text-align: center;
+    font-size: xx-large;
+  }
+  /* buttons manipulations */
+  .buttonsGrid button{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: x-large;
+    border-color: rgb(26, 21, 49);
+  }
+  .buttonsGrid .Equal{
+    background-color: rgb(17, 17, 161);
+  }
+  .buttonsGrid button:hover{
+    background-color: rgb(170, 170, 170);
+  }
+  .buttonsGrid .Equal:hover{
+    background-color: rgb(26, 145, 243);
+  }
+  .buttonsGrid button:active{
+    background-color: rgb(86, 86, 86);
+  }
+  .buttonsGrid .Equal:active{
+    background-color: rgb(26, 145, 220);
+  }
