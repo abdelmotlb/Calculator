@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { LinkappService } from 'src/service/linkapp.service';
 import { HttpClient } from '@angular/common/http';
 
 
@@ -123,12 +122,6 @@ export class CalculatorComponent implements OnInit {
     else{
       //evaluate
       this.OperandToStoreIn = 0;
-
-      // if(11 <= this.Operation && this.Operation <= 14)
-      //   this.DisplayedExpression = parseFloat(this.operand[0]).toString() + this.PrimativeOperationsSymbol(this.Operation) + parseFloat(this.operand[1]).toString();
-      // else
-      //   this.DisplayedExpression = this.PrimativeOperationsSymbol(this.Operation) + parseFloat(this.operand[0]).toString();
-      
       this.linkWithBack( this.operand[0], this.Operation, this.operand[1] );
       //op0 = out
       this.usedOperand = 1;
